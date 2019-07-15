@@ -1,0 +1,2 @@
+# awesomeProject
+Obfuscation of log files       -->> Obfuscate the personal informations (such as Phone, email) from the huge log files. Logs are in JSON format containing other data along with Phone, Email System should be able to read these logs from files and Obfuscate(mask/encode) the personal informations so that it becomes difficult to read for outer world.  Implement a command line tool that takes a files containing logs. 
