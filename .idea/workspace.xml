@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="111ad403-9de1-47c4-bfb3-ffe40616fdf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/functions.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp.text" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/awesomeProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/logFileRead.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/functions.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/functions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/db.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="28" column="55" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="55" />
+            <state relative-caret-position="360">
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding>
                 <element signature="e#14#201#0" expanded="true" />
               </folding>
@@ -38,12 +37,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/functions.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
+                <element signature="e#25#202#0" expanded="true" />
                 <element signature="n#!!block;n#uploadFile#0" />
                 <element signature="n#!!block;n#addlog#0" />
                 <element signature="n#!!block;n#createLog#0" />
@@ -95,9 +95,10 @@
         <option value="$PROJECT_DIR$/temp.text" />
         <option value="$PROJECT_DIR$/model/struct.go" />
         <option value="$PROJECT_DIR$/functions.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/database/db.go" />
         <option value="$PROJECT_DIR$/controller/functions.go" />
+        <option value="$PROJECT_DIR$/../logFileRead/controller/functions.go" />
+        <option value="$PROJECT_DIR$/main.go" />
       </list>
     </option>
   </component>
@@ -116,11 +117,11 @@
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="awesomeProject" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="logFileRead" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/go/src/awesomeProject" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
-              <item name="awesomeProject" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="logFileRead" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/go/src/awesomeProject" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
@@ -132,13 +133,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="awesomeProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="logFileRead" type="b2602c69:ProjectViewProjectNode" />
               <item name="awesomeProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="awesomeProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="awesomeProject" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -154,6 +150,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -174,12 +171,34 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="logFileRead" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="awesomeProject" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="logFileRead" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="awesomeProject" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="512" y="0" width="928" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="730" y="0" width="710" height="900" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17268623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22904192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -231,13 +250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/db.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/struct.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -248,24 +260,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file://$PROJECT_DIR$/controller/functions.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="55" />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#14#201#0" expanded="true" />
+            <element signature="e#25#202#0" expanded="true" />
+            <element signature="n#!!block;n#uploadFile#0" />
+            <element signature="n#!!block;n#addlog#0" />
+            <element signature="n#!!block;n#createLog#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/functions.go">
+    <entry file="file://$PROJECT_DIR$/database/db.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
           <folding>
-            <element signature="n#!!block;n#uploadFile#0" />
-            <element signature="n#!!block;n#addlog#0" />
-            <element signature="n#!!block;n#createLog#0" />
+            <element signature="e#14#201#0" expanded="true" />
           </folding>
         </state>
       </provider>
