@@ -23,14 +23,14 @@ func AdminLogs(c *gin.Context){
 
 	database.DB.Where("name=?",searchId).Find(&users)
 	if len(users) <= 0 {
-		c.JSON(http.StatusNotFound, gin.H{"status": http.StatusNotFound, "message": "No todo found!"})
+		c.JSON(http.StatusNotFound, gin.H{"status": http.StatusNotFound, "message": "No log found!"})
 		return
 	}
 
 	var waitgroup sync.WaitGroup
 	waitgroup.Add(len(users))
 
-	//transforms the todos for building a good response
+	
 	for i:=0;i<len(users);i++ {
 		var user model.LogModel
 		user =users[i]
@@ -54,19 +54,19 @@ func UserLogs(c *gin.Context){
 	var _tuser []model.User
 	database.DB.Where("name=?",searchId).Find(&users)
 	if len(users) <= 0 {
-		c.JSON(http.StatusNotFound, gin.H{"status": http.StatusNotFound, "message": "No todo found!"})
+		c.JSON(http.StatusNotFound, gin.H{"status": http.StatusNotFound, "message": "No log found!"})
 		return
 	}
 
 
-	//transforms the todos for building a good response
+	
 
 
 	var waitgroup sync.WaitGroup
 	waitgroup.Add(len(users))
 
 
-	//transforms the todos for building a good response
+	
 
 
 	for i:=0;i<len(users);i++ {
@@ -81,12 +81,7 @@ func UserLogs(c *gin.Context){
 
 	}
 	waitgroup.Wait()
-	//for i:=0;i<len(users);i++ {
-	//
-	//	user :=users[i]
-	//	Maskedmobile := "XXXXXXXXXX"
-	//	_tuser = append(_tuser, User{Name: user.Name, Mobile: Maskedmobile})
-	//}
+	
 	c.JSON(http.StatusOK, gin.H{"status": http.StatusOK, "data": _tuser})
 }
 
@@ -145,9 +140,7 @@ func UploadFileStruct(c *gin.Context){
 		go addlog(&user,&waitgroup)
 
 
-		//todo := logModel{Name: user.Name, Mobile: user.Mobile}
-		//fmt.Println(user.Name,user.Mobile)
-		//db.Save(&todo)
+		
 	}
 	waitgroup.Wait()
 	// write this byte array to our temporary file
@@ -335,7 +328,7 @@ func UploadFileStructMultiFile(c *gin.Context){
 	//fmt.Fprintf(w, "Uploading File")
 }
 
-
+/*
 func UploadFileUnstruct(c *gin.Context){
 	fmt.Println("File Upload Endpoint Hit")
 
@@ -409,7 +402,7 @@ func UploadFileUnstruct(c *gin.Context){
 	c.JSON(http.StatusCreated, gin.H{"status": http.StatusCreated, "message": "Successfully Uploaded File\n"})
 	//fmt.Fprintf(w, "Uploading File")
 
-}
+}*/
 
 // createTodo add a new todo
 func CreateLog(c *gin.Context) {
