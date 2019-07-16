@@ -214,6 +214,7 @@ func UploadFileStructMultiFile(c *gin.Context){
 
 			fmt.Println("i in first for loop")
 			tempFile, err := ioutil.TempFile("/Users/rishabhacharya/go/src/temp-images", "upload-*.json")
+			defer wg.Done()
 			if err != nil {
 				fmt.Println(err)
 			}
@@ -255,7 +256,7 @@ func UploadFileStructMultiFile(c *gin.Context){
 			// write this byte array to our temporary file
 			tempFile.Write(fileBytes)
 			fmt.Println("i out of second for loop")
-			wg.Done()
+// 			wg.Done()
 		}(&file,&wg)
 
 
